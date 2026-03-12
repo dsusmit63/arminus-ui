@@ -1,0 +1,102 @@
+/* ================================
+   RESET & VARIABLES
+================================ */
+
+:root {
+  --navbar-height: 80px;
+  --primary-blue: #1e88ff;
+  --primary-blue-dark: #166fe0;
+  --text-dark: #0f172a;
+  --text-muted: #475569;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text-dark);
+  background: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+
+/* ================================
+   CONTAINER
+================================ */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ================================
+   NAVBAR (STICKY & SOLID)
+================================ */
+
+/* ================================
+   HERO
+================================ */
+
+/* ================================
+   HERO WITH IMAGE (NO BLUE)
+================================ */
+
+/* ================================
+   2-COLUMN HERO (FINAL)
+================================ */
+
+/* ===============================
+   TRUSTED BY SECTION
+================================ */
+
+/* ===============================
+   TRUSTED BY SECTION
+================================ */
+/* ===============================
+   TRUSTED BY SECTION
+================================ */
+
+/* ===============================
+   SERVICES SECTION (ADVANCED)
+================================ */
+/* ===============================
+   SERVICES SECTION
+================================ */
+/* SECTION */
+
+/* ---------- Accessibility ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .service-card,
+  .service-image-wrapper img {
+    transition: none;
+  }
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-header h2 {
+    font-size: 32px;
+  }
+}
+/* ===============================
+   HERO THREE.JS LAYER
+================================ */
+
+.hero-with-3d {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-with-3d .container {
+  position: relative;
+  z-index: 1;
+}

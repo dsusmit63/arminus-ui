@@ -1,0 +1,80 @@
+.hero-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.hero-slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 24px;
+}
+
+/* Arrows */
+/* Arrows (subtle & premium) */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7); /* transparency */
+  backdrop-filter: blur(6px);
+  border: none;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s ease;
+}
+
+.slider-arrow:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-50%) scale(1.06);
+}
+
+.slider-arrow.left {
+  left: 18px;
+}
+
+.slider-arrow.right {
+  right: 18px;
+}
+/* Dots container */
+.slider-dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+/* Dot */
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Active dot */
+.dot.active {
+  width: 18px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+/* Hover */
+.dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+}

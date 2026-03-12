@@ -1,0 +1,88 @@
+.trusted-section {
+  padding: 64px 0 48px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.trusted-title {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  color: #64748b;
+  margin-bottom: 32px;
+  font-weight: 600;
+}
+
+/* Marquee wrapper */
+.logo-marquee {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Smooth edge fade (premium touch) */
+.logo-marquee::before,
+.logo-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+}
+
+.logo-marquee::before {
+  left: 0;
+  background: linear-gradient(to right, #fff 40%, transparent);
+}
+
+.logo-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #fff 40%, transparent);
+}
+
+/* Track */
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: max-content;
+}
+
+/* Pills */
+.logo-pill {
+  min-width: 180px;
+  height: 72px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+/* Logo sizing (VERY IMPORTANT) */
+.logo-pill img {
+  max-height: 32px;
+  max-width: 120px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.logo-pill:hover {
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.logo-pill:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
